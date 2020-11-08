@@ -2,15 +2,24 @@
   "name": "gallery",
   "version": "1.0.0",
   "description": "",
-  "author": "Joel Thoms",
+  "author": "Youssef Samih",
   "license": "MIT",
   "keywords": [],
+  "type": "module",
   "scripts": {
     "build:html": "echo INSERT BUILD HTML HERE",
-    "build:images": "echo INSERT BUILD IMAGES HERE"
+    "build:images": "node src/build-image.js"
   },
   "dependencies": {
+    "glob": "^7.1.6",
     "js-yaml": "^3.14.0",
-    "sharp": "^0.25.3"
+    "mkdirp": "^1.0.4",
+    "sharp": "^0.26.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.13.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.1.2"
   }
 }
